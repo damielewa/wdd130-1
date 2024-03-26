@@ -1,0 +1,103 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #ffc107;
+  --text-color: #333;
+}
+
+/* General styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: var(--text-color);
+}
+
+/* Header styles */
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 150px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+}
+
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+article img {
+  float: right;
+  margin-left: 20px;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin: 0;
+}
+
+.sociallinks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
+
+.sociallinks img {
+  width: 30px;
+  margin: 0 5px;
+}
+
