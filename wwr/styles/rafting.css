@@ -62,13 +62,13 @@ main {
 
 article {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 20%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
+  width: 50%;
 }
 
 article img {
