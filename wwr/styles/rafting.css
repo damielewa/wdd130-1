@@ -44,14 +44,75 @@ nav a {
   margin: 0 5px;
 }
 
-/* White Water Rafting Section */
-.white-water-rafting {
+/* Hero Section */
+.hero {
+  position: relative;
   text-align: center;
+  padding-bottom: 50px; /* Add space for content below image */
 }
 
-.white-water-rafting img {
-  width: 100%; /* Make image wider */
-  height: auto;
+.hero-image {
+  width: 100%; /* Make image fill width */
+  height: 400px; /* Set image height */
+  object-fit: cover; /* Crop image to fit container */
+  animation: slide 20s infinite ease-in-out; /* Add animation for sliding effect */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7); /* Add text shadow for better visibility */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.article-carousel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  animation: fade 10s infinite alternate ease-in-out; /* Add animation for fading effect */
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.article {
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slide-left 10s infinite linear; /* Add animation for sliding left effect */
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 /* History Section */
@@ -62,15 +123,17 @@ nav a {
   padding: 20px;
 }
 
-.history img {
-  width: 200px; /* Adjust image width as needed */
-  height: auto;
-  margin: 0 20px;
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
 }
 
-.float-center {
-  float: none; /* Clear float for responsive layout */
-  margin: 0 auto; /* Center image horizontally */
+.history-image {
+  width: 200px; /* Adjust image width as needed */
+  height: auto;
+  margin: 0;
 }
 
 .history-content {
@@ -79,46 +142,3 @@ nav a {
 
 /* Adventure Awaits You Section */
 .adventure-awaits {
-  text-align: center;
-}
-
-.adventure-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for images */
-  gap: 10px; /* Add spacing between images */
-}
-
-.adventure-grid img {
-  width: 100%; /* Make images fit within grid cells */
-  height: auto;
-}
-
-/* Footer styles */
-footer {
-  background-color: var(--primary-color);
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer p {
-  color: #fff;
-  margin: 0;
-}
-
-.sociallinks {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.sociallinks a {
-  text-decoration: none;
-  margin-left: 10px;
-}
-
-.sociallinks img {
-  width: 30px;
-}
