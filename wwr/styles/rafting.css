@@ -66,20 +66,22 @@ main {
 }
 
 article {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  transform: translate(-50%, -50%);
+  /* Removed absolute positioning and margins */
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   width: 50%;
-  margin: 0 auto; 
-  text-align: justify; 
+  text-align: justify;
+}
+
+article .about-content {  /* Target .about-content instead of article */
+  display: flex; /* Optional: Consider flexbox for image layout within content */
+  flex-wrap: wrap; /* Optional: Allow images to wrap to next line if needed  */
 }
 
 article img {
-  float: right;
+  /* Optional: Consider alternative image placement using flexbox or grid */
+  float: right; /* Current float right positioning */
   margin-left: 20px;
   margin-bottom: 20px;
 }
