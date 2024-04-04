@@ -91,6 +91,7 @@ article img {
 }
 
 .adventures figure {
+  flex: 1;
   margin: 0;
 }
 
@@ -107,7 +108,8 @@ article img {
 footer {
   background-color: var(--primary-color);
   padding: 20px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 footer p {
@@ -119,10 +121,7 @@ footer p {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.sociallinks li {
-  display: inline-block;
+  display: flex;
 }
 
 .sociallinks a {
