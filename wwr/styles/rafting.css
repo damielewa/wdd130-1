@@ -21,8 +21,8 @@ body {
 header {
   background-color: var(--primary-color);
   padding: 20px;
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -38,72 +38,59 @@ nav {
 nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 0 5px;
 }
 
-/* Main styles */
-main {
-  max-width: 800px;
-  margin: 20px auto;
+/* White Water Rafting Section */
+.white-water-rafting {
+  text-align: center;
 }
 
-.hero {
-  position: relative;
-}
-
-.hero img {
-  width: 50%;
+.white-water-rafting img {
+  width: 100%; /* Make image wider */
   height: auto;
 }
 
-.hero h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 3em;
+/* History Section */
+.history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-article {
-  /* Removed absolute positioning and margins */
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  width: 50%;
+.history img {
+  width: 200px; /* Adjust image width as needed */
+  height: auto;
+  margin: 0 20px;
+}
+
+.float-center {
+  float: none; /* Clear float for responsive layout */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+.history-content {
   text-align: justify;
 }
 
-article .about-content {  /* Target .about-content instead of article */
-  display: flex; /* Optional: Consider flexbox for image layout within content */
-  flex-wrap: wrap; /* Optional: Allow images to wrap to next line if needed  */
-}
-
-article img {
-  /* Optional: Consider alternative image placement using flexbox or grid */
-  float: right; /* Current float right positioning */
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-/* Adventures section */
-.adventures {
-  display: flex;
-  justify-content: space-between;
-}
-
-.adventures figure {
-  flex: 1;
-  margin: 0;
-}
-
-.adventures img {
-  width: 100%;
-  height: auto;
-}
-
-.adventures figcaption {
+/* Adventure Awaits You Section */
+.adventure-awaits {
   text-align: center;
+}
+
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for images */
+  gap: 10px; /* Add spacing between images */
+}
+
+.adventure-grid img {
+  width: 100%; /* Make images fit within grid cells */
+  height: auto;
 }
 
 /* Footer styles */
@@ -111,7 +98,8 @@ footer {
   background-color: var(--primary-color);
   padding: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 footer p {
@@ -128,9 +116,9 @@ footer p {
 
 .sociallinks a {
   text-decoration: none;
+  margin-left: 10px;
 }
 
 .sociallinks img {
   width: 30px;
-  margin-left: 10px;
 }
