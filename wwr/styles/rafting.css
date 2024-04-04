@@ -54,26 +54,30 @@ nav a {
   height: auto;
 }
 
-/* History Section */
-.history {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.white-water-rafting-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
+
+/* Align description center below the image */
+.white-water-rafting-description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Article Section */
+.article-box {
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-}
-
-.history img {
-  width: 200px; /* Adjust image width as needed */
-  height: auto;
-  margin: 0 20px;
-}
-
-.float-center {
-  float: none; /* Clear float for responsive layout */
-  margin: 0 auto; /* Center image horizontally */
-}
-
-.history-content {
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px auto;
   text-align: justify;
 }
 
